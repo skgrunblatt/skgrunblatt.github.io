@@ -1,476 +1,312 @@
-<!DOCTYPE HTML>
-<!--
-	Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Samuel K. Grunblatt</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel K. Grunblatt</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1>Samuel K. Grunblatt</h1>
+            <nav class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#teaching">Teaching & Outreach</a>
+                <a href="SGrunblatt_cv.pdf" target="_blank">CV</a>
+            </nav>
+            <div class="header-actions">
+                <div class="social-links">
+                    <a href="mailto:sgrunblatt@ua.edu">Email</a>
+                </div>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            </div>
+        </div>
+    </header>
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<!--span class="icon solid major fa-cloud"></span>-->
-					<h1><strong>Samuel Grunblatt</strong><br />
-					<a href="mailto:sgrunblatt@ua.edu">sgrunblatt@ua.edu</h1>
-					<p>Assistant Professor, Department of Physics and Astronomy / <br />
-					University of Alabama</p>
-					<ul class="actions special">
-						<li><a href="#one" class="button scrolly">Discover</a></li>
-					</ul>
-				</div>
-			</section>
+    <main class="container">
+        <!-- Hero / About Section -->
+        <section id="about" class="bento-box hero">
+            <div class="hero-image">
+                <img src="images/IMG_8638%20(2).jpeg" alt="Samuel K. Grunblatt">
+            </div>
+            <div class="hero-text">
+                <h2>About Me</h2>
+                <p>I am an Assistant Professor in the <a href="https://physics.ua.edu/" target="_blank" style="color: inherit; text-decoration: underline;">Department of Physics and Astronomy</a> at the <a href="https://www.ua.edu/" target="_blank" style="color: inherit; text-decoration: underline;"><strong>University of Alabama</strong></a>. My research focuses on planetary archaeology and stellar astrophysics, specifically finding and understanding giant planets orbiting giant stars.</p>
+                <p>Previously, I was an Assistant Research Scientist at Johns Hopkins University (2022–2024), and a Kalbfleisch Postdoctoral Fellow at the American Museum of Natural History / Flatiron Institute (2019–2022). I received my Ph.D. in Astronomy from the Institute for Astronomy at the University of Hawaii in 2019, working with Daniel Huber and Eric Gaidos.</p>
+                <div class="action-buttons">
+                    <a href="SGrunblatt_cv.pdf" class="btn">Curriculum Vitae</a>
+                    <a href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22Grunblatt%2C%20Samuel%22&sort=date%20desc%2C%20bibcode%20desc&p_=0" class="btn" target="_blank">Publications</a>
+                </div>
+            </div>
+        </section>
 
-		<!-- One -->
-			<section id="one" class="main style1">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Welcome!</h2>
-							</header>
-							I'm an Assistant Professor in the Department for Physics and Astronomy of the University of Alabama
-		interested in late-stage planetary system evolution, asteroseismology and galactic archaeology. Previously, I was an Research Scientist at the Bloomberg Center for Physics and Astronomy at Johns Hopkins University, and a 
-		Kalbfleisch Fellow in the Astrophysics Department of the American Museum
-		of Natural History, and obtained my Ph.D. at the Institute
-	        for Astronomy at the University of Hawaii working with <a
-	        href="https://www.ifa.hawaii.edu/users/dhuber">Daniel Huber</a>
-	        and <a
-	        href="http://www.soest.hawaii.edu/GG/FACULTY/GAIDOS/pebl.html">
-	        Eric Gaidos</a> on <a
-				href="https://www.newscientist.com/article/2107068-puffed-up-exoplanets-inflate-with-heat-from-their-stars-alone/">finding
-				and understanding giant planets orbiting giant stars</a>. </p>
-						<p> I'm interested in understanding the mysteries behind stellar
-		and planetary evolution, and how they affect our
-		past, present and future. In my free time, I enjoy making music,
-		attempting to surf, and spreading my enthusiasm about
-				astronomy to others.</p>						</div>
-						<div class="col-6 col-12-medium imp-medium">
-							<span class="image fit"><img src="images/pic01.jpeg" alt="" /></span>
-						</div>
-					</div>
-				</div>
-			</section>
+        <!-- Research Section (Bento Grid) -->
+        <section id="research" class="section-heading">
+            <h2>Research Highlights</h2>
+        </section>
+        
+        <div class="bento-grid">
+            <!-- Card 1 -->
+            <article class="bento-card span-2">
+                <div class="card-split alt">
+                    <div class="card-image">
+                        <img src="images/paper_fig1.png" alt="giants Pipeline">
+                    </div>
+                    <div class="card-content">
+                        <h3>The giants Pipeline</h3>
+                        <p>Developing open-source software for the astronomical community. The <em>giants</em> pipeline is designed to robustly identify and characterize transiting planets around evolved stars, standardizing lightcurve analysis and asteroseismic vetting.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://github.com/nksaunders/giants/blob/joss/paper.md" class="read-more" style="display: block;" target="_blank">Saunders et al. (JOSS in prep) &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-		<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
+            <!-- Card 2 -->
+            <article class="bento-card span-2">
+                 <div class="card-split">
+                     <div class="card-content">
+                        <h3>Analyzing Stellar Variability in Planetary Systems</h3>
+                        <p>Using a Gaussian Process regression, a nonparametric statistical time-series analysis technique, we can describe and remove the predominant stellar signal to extract planetary signals with greater precision from radial velocity data and photometric lightcurves.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://iopscience.iop.org/article/10.3847/2515-5172/ae7074" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Strafaci, Monroe, and Grunblatt 2026 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Saunders, Grunblatt et al. 2025 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Grunblatt, Saunders et al. 2022 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Grunblatt et al. 2017 &rarr;</a>
+                            <a href="http://adsabs.harvard.edu/abs/2015ApJ...808..127G" class="read-more" style="display: block;" target="_blank">Grunblatt et al. 2015 &rarr;</a>
+                        </div>
+                    </div>
+                     <div class="card-image">
+                        <img src="images/f2.jpg" alt="Radial velocity measurements of Kepler-78" style="margin-bottom: 0.75rem;">
+                        <img src="images/SHOGPpowspec.jpg" alt="Power spectral density of K2-132">
+                    </div>
+                </div>
+            </article>
 
-							<ul class="major-icons">
-								<li><a href="SGrunblatt_cv.pdf"<span class="icon solid style2 major fa-university"></span></a></li>
-								<li><a href="http://adsabs.harvard.edu/cgi-bin/basic_connect?qsearch=grunblatt%2C+samuel&version=1"<span class="icon solid style4 major fa-pencil-alt"></span></a></li>
-								<li><a href="https://github.com/skgrunblatt/"<span class="icon solid style1 major fa-code"></span></a></li>
-								<li><a href="https://twitter.com/SKGrunblatt"<span class="icon solid style3 major fa-retweet"></span></a></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2>Check out my CV, publications, Github and Twitter here.</h2>
-							</header>
-							<p>Click on the icons to the left to learn more. Otherwise, feel free to reach out to me via email!</p>
-						</div>
-					</div>
-				</div>
-			</section>
+            <!-- Card 2 -->
+            <article class="bento-card span-2">
+                <div class="card-split alt">
+                    <div class="card-image">
+                        <img src="images/ajab4c35f9_hr.jpg" alt="Planet Occurrence Around Evolved Stars">
+                    </div>
+                    <div class="card-content">
+                        <h3>Planet Occurrence Around Evolved Stars</h3>
+                        <p>Our search has identified two new planets, K2-97b and K2-132b. Both are gas giants, 1.3 times the size and half the mass of Jupiter, orbiting their host stars approximately every 9 days. These targets were identified and accurately characterized with asteroseismology.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://scixplorer.org/abs/2026enap....1..520G/abstract" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Grunblatt 2026 (Book Chapter) &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Yoshida, Grunblatt & Price-Whelan 2022 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block;" target="_blank">Grunblatt et al. 2019 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-		<!-- Three -->
-			<section id="three" class="main style1 special">
-				<div class="container">
-					<header class="major">
-						<h2>Current Research Projects</h2>
-					</header>
-					<p>I'm currently leading multiple projects to study red giant stars and their transiting planet population with the <a href="http://tess.mit.edu"> NASA/MIT TESS Mission.</a></p>
-					<div class="row gtr-150">
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
-							<h3>Finding new systems</h3>
-							<p>I'm supported by the NASA TESS Guest Investigator program to find planet candidates transiting giant stars. Studying these planet population can solve decades-old mysteries of planet evolution.</p>
-							<ul class="actions special">
-								<li><a href="https://ui.adsabs.harvard.edu/abs/2019AJ....158..227G/abstract" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/keck.jpeg" alt="" /></span>
-							<h3>Ground-based followup</h3>
-							<p>I also coordinate the confirmation of these planet candidates using ground-based facilities around the world. So far, my team and I have confirmed more than 10 giant planets transiting giant stars using 5 different ground-based observing facilities.</p>
-							<ul class="actions special">
-								<li><a href="https://ui.adsabs.harvard.edu/abs/2022AJ....163..120G/abstract" class="button">More</a></li>
-							</ul>
-						</div>
-						<div class="col-4 col-12-medium">
-							<span class="image fit"><img src="images/asteroseismology.png" alt="" /></span>
-							<h3>Beyond the planetary</h3>
-							<p>I'm also interested in asteroseismic characterization of red giant stars to probe the formation and evolution of our Galaxy. </p>
-							<ul class="actions special">
-								<li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...916...88G/abstract" class="button">More</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+            <!-- Card 3 -->
+            <article class="bento-card span-2">
+                <div class="card-split">
+                    <div class="card-content">
+                        <h3>Human Movement Data with hominin.ai</h3>
+                        <p>Applying astrophysical time-series analysis tools to human movement data to extract novel insights. This work is supported by NSF SBIR and a2 grants, demonstrating the cross-disciplinary power of astronomical techniques.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block;" target="_blank">Hammerberg, Grunblatt & Kramer 2025 &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/index.png" alt="Hominin.ai Human Movement Analysis">
+                    </div>
+                </div>
+            </article>
 
-		<!-- Four -->
-			<!-- <section id="four" class="main style2 special">
-				<div class="container">
-					<header class="major">
-						<h2>Ipsum feugiat consequat?</h2>
-					</header>
-					<p>Sed lacus nascetur ac ante amet sapien.</p>
-					<ul class="actions special">
-						<li><a href="#" class="button wide primary">Sign Up</a></li>
-						<li><a href="#" class="button wide">Learn More</a></li>
-					</ul>
-				</div>
-			</section> -->
+            <!-- Card 4 -->
+            <article class="bento-card span-2">
+                <div class="card-split alt">
+                    <div class="card-image">
+                        <img src="images/apjac0532f2_hr.jpg" alt="Asteroseismology and Galactic Archaeology - Figure 2 from Grunblatt et al. 2021">
+                    </div>
+                    <div class="card-content">
+                        <h3>Asteroseismology & Galactic Archaeology</h3>
+                        <p>By studying the internal structure of stars through their oscillations (asteroseismology), we can trace the history and evolution of the Milky Way. This intersection of stellar astrophysics and galactic archaeology helps us precisely characterize exoplanet host stars and understand the timeline of planet formation across different galactic environments.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Lindsay et al. 2025 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Nnadi & Grunblatt 2023 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/abs/2021AJ....161..163G/abstract" class="read-more" style="display: block;" target="_blank">Grunblatt et al. 2021 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-		<!-- Five -->
-		<!--
-			<section id="five" class="main style1">
-				<div class="container">
-					<header class="major special">
-						<h2>Elements</h2>
-					</header>
+            <!-- Card 5 -->
+            <article class="bento-card span-2">
+                <div class="card-split">
+                    <div class="card-content">
+                        <h3>Planet Re-Inflation</h3>
+                        <p>K2-97b and K2-132b are likely the first known planets to be currently re-inflated. Their incident flux history indicates they were too cool to inflate until their host stars became red giants, providing evidence that planets may be inflated directly by incident stellar radiation.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Saunders, Grunblatt et al. 2025 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Saunders, Grunblatt et al. 2024 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Pereira, Grunblatt, Saunders et al. 2024 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Grunblatt, Saunders et al. 2022 &rarr;</a>
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block;" target="_blank">Saunders, Grunblatt et al. 2022 &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/K2_132b_reinftrack_0.48MJ_10core.jpg" alt="Radius evolution of K2-132b">
+                    </div>
+                </div>
+            </article>
 
-					<section>
-						<h4>Text</h4>
-						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-						<hr />
-						<header>
-							<h4>Heading with a Subtitle</h4>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<header>
-							<h5>Heading with a Subtitle</h5>
-							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-						</header>
-						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-						<hr />
-						<h2>Heading Level 2</h2>
-						<h3>Heading Level 3</h3>
-						<h4>Heading Level 4</h4>
-						<h5>Heading Level 5</h5>
-						<h6>Heading Level 6</h6>
-						<hr />
-						<h5>Blockquote</h5>
-						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-						<h5>Preformatted</h5>
-						<pre><code>i = 0;
+            <!-- Card 6 -->
+            <article class="bento-card span-2">
+                <div class="card-split alt">
+                    <div class="card-image">
+                        <img src="images/apjadfd60f7_hr.jpg" alt="Transit Timing Analyses - Figure from Sodickson & Grunblatt 2025">
+                    </div>
+                    <div class="card-content">
+                        <h3>Transit Timing Analyses</h3>
+                        <p>Our transit timing analyses provide crucial insights into the dynamics of exoplanetary systems. By precisely measuring the transit times of known planets, we can identify transit timing variations (TTVs) indicative of complex orbital architectures and ongoing orbital decay.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block;" target="_blank">Sodickson & Grunblatt 2025 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-while (!deck.isInOrder()) {
-print 'Iteration ' + i;
-deck.shuffle();
-i++;
-}
+            <!-- Card 7 -->
+            <article class="bento-card span-2">
+                <div class="card-split">
+                    <div class="card-content">
+                        <h3>Late Stage Atmospheric Evolution</h3>
+                        <p>Our research explores the balance between planetary reinflation and atmospheric mass loss at late evolutionary stages. By characterizing evolved hot Neptunes orbiting giant stars, we can better understand how intense stellar irradiation affects these smaller planets as their host stars age.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block;" target="_blank">Grunblatt, Saunders et al. 2024 &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/ajad4149f9_hr.jpg" alt="Late Stage Atmospheric Evolution">
+                    </div>
+                </div>
+            </article>
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-					</section>
+            <!-- Card 8 -->
+            <article class="bento-card span-2">
+                 <div class="card-split alt">
+                     <div class="card-image">
+                        <img src="images/whitepaper.png" alt="Transiting Planets in Distant Environments">
+                    </div>
+                    <div class="card-content">
+                        <h3>Transiting Planets in Distant Environments</h3>
+                        <p>Exploring the potential of the Nancy Grace Roman Space Telescope to discover and characterize transiting exoplanets in distant galactic environments, providing crucial insights into planet formation across the Milky Way.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://scixplorer.org/abs/2023arXiv230610647G/abstract" class="read-more" style="display: block;" target="_blank">Grunblatt et al. 2023 &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
 
-					<section>
-						<h4>Lists</h4>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<h5>Unordered</h5>
-								<ul>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-								<h5>Alternate</h5>
-								<ul class="alt">
-									<li>Dolor pulvinar etiam.</li>
-									<li>Sagittis adipiscing.</li>
-									<li>Felis enim feugiat.</li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<h5>Ordered</h5>
-								<ol>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis viverra.</li>
-									<li>Felis enim feugiat.</li>
-									<li>Dolor pulvinar etiam.</li>
-									<li>Etiam vel felis lorem.</li>
-									<li>Felis enim et feugiat.</li>
-								</ol>
-								<h5>Icons</h5>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<h5>Actions</h5>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<ul class="actions">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions small">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary">Default</a></li>
-									<li><a href="#" class="button">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small">Small</a></li>
-									<li><a href="#" class="button small">Small</a></li>
-								</ul>
-							</div>
-							<div class="col-6 col-12-medium">
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary fit">Default</a></li>
-									<li><a href="#" class="button fit">Default</a></li>
-								</ul>
-								<ul class="actions stacked">
-									<li><a href="#" class="button primary small fit">Small</a></li>
-									<li><a href="#" class="button small fit">Small</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
+            <!-- Card 9 -->
+            <article class="bento-card span-2">
+                <div class="card-split">
+                    <div class="card-content">
+                        <h3>Eccentric Giants Orbiting Giants</h3>
+                        <p>Analysis of radial velocity measurements from the Keck-I telescope revealed that both planets discovered by our survey were on moderately eccentric orbits, suggesting migration from longer period, more eccentric orbits.</p>
+                        <div style="margin-top: 1rem;">
+                            <a href="https://ui.adsabs.harvard.edu/" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">Grunblatt, Saunders et al. 2023 &rarr;</a>
+                            <a href="http://adsabs.harvard.edu/abs/2018ApJ...861L...5G" class="read-more" style="display: block;" target="_blank">Grunblatt et al. 2018 &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="card-image">
+                        <img src="images/ajaca670f6_hr.jpg" alt="Eccentric Giants Chart">
+                    </div>
+                </div>
+            </article>
+        </div>
 
-					<section>
-						<h4>Table</h4>
-						<h5>Default</h5>
-						<div class="table-wrapper">
-							<table>
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
+        <!-- Teaching / Outreach Section -->
+        <section id="teaching" class="section-heading">
+            <h2>Teaching & Outreach</h2>
+        </section>
 
-						<h5>Alternate</h5>
-						<div class="table-wrapper">
-							<table class="alt">
-								<thead>
-									<tr>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Item One</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Two</td>
-										<td>Vis ac commodo adipiscing arcu aliquet.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Three</td>
-										<td> Morbi faucibus arcu accumsan lorem.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>Item Four</td>
-										<td>Vitae integer tempus condimentum.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>Item Five</td>
-										<td>Ante turpis integer aliquet porttitor.</td>
-										<td>29.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="2"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>
+        <div class="bento-grid">
+            <article class="bento-card">
+                <h3>University of Alabama Instruction</h3>
+                <p>Instructor for AY 203 (Observational Astronomy) and AY 101 (Introductory Astronomy), focusing on practical observational techniques and foundational astrophysical concepts.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="https://ua.simplesyllabus.com/en-US/doc/cl2j9g0cf/Fall-2026-AY-203-320?mode=view" class="read-more" style="display: block; margin-bottom: 0.5rem;" target="_blank">AY 203 Syllabus &rarr;</a>
+                    <a href="https://ua.simplesyllabus.com/en-US/doc/1fu28w35z/Spring-2026-AY-101-001?mode=view" class="read-more" style="display: block;" target="_blank">AY 101 Syllabus &rarr;</a>
+                </div>
+            </article>
 
-					<section>
-						<h4>Buttons</h4>
-						<ul class="actions">
-							<li><a href="#" class="button primary">Primary</a></li>
-							<li><a href="#" class="button">Default</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button large">Large</a></li>
-							<li><a href="#" class="button">Default</a></li>
-							<li><a href="#" class="button small">Small</a></li>
-						</ul>
-						<ul class="actions fit">
-							<li><a href="#" class="button fit">Fit</a></li>
-							<li><a href="#" class="button primary fit">Fit</a></li>
-							<li><a href="#" class="button fit">Fit</a></li>
-						</ul>
-						<ul class="actions fit small">
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-							<li><a href="#" class="button fit small">Fit + Small</a></li>
-							<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-						</ul>
-						<ul class="actions">
-							<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-							<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-						</ul>
-						<ul class="actions">
-							<li><span class="button primary disabled">Disabled</span></li>
-							<li><span class="button disabled">Disabled</span></li>
-						</ul>
-					</section>
+            <article class="bento-card">
+                <img src="images/01.jpeg" alt="HI-STAR Program" class="card-img-top">
+                <h3>Mentorship (HI-STAR)</h3>
+                <p>Mentored high school students on regional science fair projects. All three students made it to the state competition and are working to publish their results in professional journals.</p>
+            </article>
 
-					<section>
-						<h4>Form</h4>
-						<form method="post" action="#">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-								</div>
-								<div class="col-6 col-12-xsmall">
-									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-								</div>
-								<div class="col-12">
-									<select name="demo-category" id="demo-category">
-										<option value="">- Category -</option>
-										<option value="1">Manufacturing</option>
-										<option value="1">Shipping</option>
-										<option value="1">Administration</option>
-										<option value="1">Human Resources</option>
-									</select>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-									<label for="demo-priority-low">Low</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-normal" name="demo-priority">
-									<label for="demo-priority-normal">Normal</label>
-								</div>
-								<div class="col-4 col-12-small">
-									<input type="radio" id="demo-priority-high" name="demo-priority">
-									<label for="demo-priority-high">High</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-copy" name="demo-copy">
-									<label for="demo-copy">Email me a copy</label>
-								</div>
-								<div class="col-6 col-12-small">
-									<input type="checkbox" id="demo-human" name="demo-human" checked>
-									<label for="demo-human">Not a robot</label>
-								</div>
-								<div class="col-12">
-									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-								</div>
-								<div class="col-12">
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</div>
-							</div>
-						</form>
-					</section>
+            <article class="bento-card">
+                <img src="images/pic03.jpg" alt="Intro to Astro Lab" class="card-img-top">
+                <h3>Curriculum Design</h3>
+                <p>Developed multiple lab experiments and class activities for the UH undergraduate astronomy lab class through the Professional Development Program at UC Santa Cruz (ISEE).</p>
+            </article>
 
-					<section>
-						<h4>Image</h4>
-						<h5>Fit</h5>
-						<div class="box alt">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-12"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-								<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-							</div>
-						</div>
-						<h5>Left &amp; Right</h5>
-						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-					</section>
+             <article class="bento-card">
+                <img src="images/MDAoutreach.jpg" alt="MDA Outreach" class="card-img-top">
+                <h3>Community Outreach</h3>
+                <p>Giving talks about exoplanets and conducting solar observing sessions at the MDA summer camp on Oahu's north shore.</p>
+            </article>
+            
+            <article class="bento-card span-3 resource-links">
+                <h3>Resources & Tutorials</h3>
+                <ul>
+                    <li><a href="AY203_week6_lab.pdf" target="_blank">AY 203 Lab 6 (PDF)</a></li>
+                    <li><a href="AY203_week7_lab.pdf" target="_blank">AY 203 Lab 7 (PDF)</a></li>
+                    <li><a href="AY203_week8_lab.pdf" target="_blank">AY 203 Lab 8 (PDF)</a></li>
+                    <li><a href="AY203_week9_2026.pdf" target="_blank">AY 203 Lab 9 (PDF)</a></li>
+                    <li><a href="http://www.ifa.hawaii.edu/users/skg/histartutorial.docx">HISTAR Lightcurve Analysis Tutorial (DOCX)</a></li>
+                    <li><a href="frequencylab.html">Astro 300L Fourier Transform Demo</a></li>
+                    <li><a href="http://genius.it/nbviewer.ipython.org/github/skgrunblatt/research/blob/master/ArtificialWaveletWalkThru.ipynb">Scientific Coding with Python: Performing a Least Squares Fit to Data</a></li>
+                    <li><a href="http://genius.it/nbviewer.ipython.org/github/skgrunblatt/research/blob/master/PowSpecWalkthru.ipynb">Scientific Coding with Python: Making a Power Spectrum of the Sun</a></li>
+                </ul>
+            </article>
+        </div>
+    </main>
 
-				</div>
-			</section>
-		-->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Samuel K. Grunblatt.</p>
+            <div class="footer-links">
+                <a href="https://github.com/skgrunblatt/">GitHub</a>
+                <a href="https://twitter.com/SKGrunblatt">Twitter</a>
+            </div>
+        </div>
+    </footer>
 
-		<!-- Footer -->
-			<section id="footer">
-				<!-- <ul class="icons">
-					<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-				</ul> -->
-				<ul class="copyright">
-					<li>&copy; Samuel Grunblatt 2022</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</section>
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        
+        // Check for saved theme preference or use OS default
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark-theme');
+            themeToggle.textContent = '☀️';
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark-theme');
+            if (document.documentElement.classList.contains('dark-theme')) {
+                localStorage.setItem('theme', 'dark');
+                themeToggle.textContent = '☀️';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeToggle.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
 </html>
