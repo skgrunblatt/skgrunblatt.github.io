@@ -1,0 +1,392 @@
+:root {
+    --bg-color: #fafafa;
+    --text-color: #1a1a1a;
+    --text-muted: #666666;
+    --card-bg: #ffffff;
+    --accent-color: #9E1B32;
+    --accent-hover: #821629;
+    --border-color: #e5e7eb;
+    
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --border-radius: 12px;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    --font-main: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-serif: 'Newsreader', serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root.dark-theme {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --card-bg: #1e1e1e;
+    --accent-color: #E33C57;
+    --accent-hover: #F25A73;
+    --border-color: #333333;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.6), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: calc(var(--border-radius) - 4px);
+    display: block;
+}
+
+/* Container */
+.container {
+    max-width: 1000px; /* Slimmer max-width to match the academic column look */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+.site-header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: var(--spacing-md) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.site-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.nav-links, .social-links {
+    display: flex;
+    gap: var(--spacing-md);
+    align-items: center;
+}
+
+.nav-links a, .social-links a {
+    color: var(--text-muted);
+    font-family: var(--font-main);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover, .social-links a:hover {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50%;
+    color: var(--text-color);
+    transition: transform 0.2s;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Section Headings */
+.section-heading {
+    margin: var(--spacing-lg) 0 var(--spacing-md);
+}
+
+.section-heading h2 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+/* Bento Hero / About */
+.bento-box.hero {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: var(--spacing-lg);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    border: 4px solid var(--border-color);
+}
+
+.hero-text h2 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 2.5rem;
+    letter-spacing: -0.03em;
+}
+
+.hero-text p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.hero-text strong {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.action-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--bg-color) !important;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.85;
+    text-decoration: none;
+}
+
+/* Bento Grid System */
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-bottom: var(--spacing-lg);
+}
+
+.bento-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.bento-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.bento-card h3 {
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.35rem;
+    color: var(--text-color);
+}
+
+.bento-card p {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+.bento-card.span-2 {
+    grid-column: span 2;
+}
+
+.bento-card.span-3 {
+    grid-column: 1 / -1;
+}
+
+.card-img-top {
+    margin-bottom: var(--spacing-md);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-image-row {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.card-image-row img {
+    width: calc(50% - var(--spacing-sm) / 2);
+    object-fit: cover;
+}
+
+.card-split {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.card-split.alt {
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.card-split .card-image img {
+    margin-bottom: var(--spacing-sm);
+    width: 100%;
+}
+
+.read-more {
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-block;
+    margin-top: auto;
+    text-decoration: none;
+    font-family: var(--font-mono);
+}
+
+.resource-links ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+}
+
+.resource-links li {
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.resource-links a {
+    font-weight: 500;
+    color: var(--text-color);
+    display: block;
+}
+
+.resource-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid var(--border-color);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-lg);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+}
+
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+.footer-links {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .bento-box.hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-image img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .action-buttons {
+        justify-content: center;
+    }
+
+    .bento-card.span-2 {
+        grid-column: span 1;
+    }
+
+    .card-split, .card-split.alt {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        display: none; /* simple mobile nav for now */
+    }
+    
+    .header-content {
+        justify-content: space-between;
+    }
+}
